@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <label for="drinkSelect">Choose option:</label>
+      <select id="drinkSelect" onchange="displayMessage()">
+        <option value="coffee">Coffee</option>
+        <option value="tea">Tea</option>
+        <option value="juice">Juice</option>
+      </select>
+      <div id="massage"></div>
+    </form>
+    <form onsubmit="checkDay(); return false;">
+      <label for="dayInput">Введіть день тижня:</label>
+      <input type="text" id="dayInput" required />
+      <button type="submit">Check</button>
+    </form>
+    <div id="result"></div>
+
+    <script src="switchHw.js"></script>
+  </body>
+</html>
